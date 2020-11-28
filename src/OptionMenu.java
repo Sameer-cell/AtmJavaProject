@@ -12,26 +12,10 @@ public class OptionMenu extends Account {
         do {
             try {
                 data.put(12344568, 4445);
-                data.put(76458897, 5555);
-                data.put(24564456, 4545);
-                data.put(23445651, 5458);
-                data.put(42378945, 5442);
-                data.put(24434570, 4765);
-                data.put(25534547, 7825);
-                data.put(23456445, 1215);
-                data.put(23554501, 5576);
-                data.put(23664575, 8985);
-                data.put(23445454, 7865);
-                data.put(61523555, 6655);
-                data.put(24567345, 5672);
-                data.put(12344500, 5475);
-                data.put(26453452, 1455);
-                data.put(23456453, 5113);
-                data.put(98569545, 4565);
                 data.put(95954545, 5555);
                 data.put(88823475, 6895);
                 data.put(66273459, 5123);
-                data.put(12345667, 1234);
+                data.put(12345678, 1234);
                 data.put(23456789, 2345);
                 System.out.println("Welcome to the ATM");
                 System.out.print("Enter your Account Number : ");
@@ -82,6 +66,7 @@ public class OptionMenu extends Account {
                 break;
             case 3:
                 System.out.println("Thank you for using the ATM");
+                System.exit(0);
                 break;
             default:
                 System.out.println("Invalid Input");
@@ -113,6 +98,9 @@ public class OptionMenu extends Account {
                 break;
             case 3:
                 System.out.println("Checking Balance in Rupees is : " + getCheckingBalance());
+                getAccountType();
+                break;
+            case 4:
                 getAccountType();
                 break;
             default: {
@@ -148,6 +136,9 @@ public class OptionMenu extends Account {
                 break;
             case 3:
                 System.out.println("Saving Balance in Rupees is : " + getSavingBalance());
+                getAccountType();
+                break;
+            case 4:
                 getAccountType();
                 break;
             default: {
